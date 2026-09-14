@@ -18,3 +18,7 @@ spring:
     admin:
       client:
         url: http://localhost:1111
+
+# jwt:
+#   secret: ${JWT_SECRET}
+#   expiration: ${JWT_EXPIRATION}
