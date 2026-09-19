@@ -18,3 +18,10 @@ spring:
     admin:
       client:
         url: http://localhost:1111
+
+resilience4j:
+  timelimiter:
+    instances:
+      paymentService:
+        timeoutDuration: 5m
+        cancelRunningFuture: true
