@@ -57,3 +57,8 @@ management:
   endpoint:
     health:
       show-details: always
+
+internal:
+  service:
+    name: MS-PaymentService
+    key: ${PAYMENT_SERVICE_KEY}
