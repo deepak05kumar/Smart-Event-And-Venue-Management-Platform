@@ -45,7 +45,7 @@ resilience4j:
   timelimiter:
     instances:
       paymentService:
-        timeout-duration: 10s
+        timeout-duration: 5s
 
 
 management:
