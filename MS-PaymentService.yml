@@ -20,5 +20,6 @@ spring:
         url: http://localhost:1111
         
 internal:
-  customer-service:
+  service:
+    name: MS-PaymentService
     key: ${PAYMENT_SERVICE_KEY}
