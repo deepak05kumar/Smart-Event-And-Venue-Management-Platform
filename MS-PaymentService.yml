@@ -18,3 +18,7 @@ spring:
     admin:
       client:
         url: http://localhost:1111
+        
+internal:
+  customer-service:
+    key: ${PAYMENT_SERVICE_KEY}
