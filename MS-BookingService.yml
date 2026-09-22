@@ -25,3 +25,8 @@ resilience4j:
       paymentService:
         timeoutDuration: 5m
         cancelRunningFuture: true
+
+internal:
+  service:
+    name: MS-PaymentService
+    key: ${PAYMENT_SERVICE_KEY}
