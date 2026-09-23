@@ -62,3 +62,8 @@ internal:
   service:
     name: MS-PaymentService
     key: ${PAYMENT_SERVICE_KEY}
+
+logging:
+  level:
+    root: INFO
+    org.springframework.security: DEBUG
