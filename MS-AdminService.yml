@@ -9,3 +9,8 @@ management:
   endpoint:
     health:
       show-details: always
+
+  boot:
+    admin:
+      client:
+        url: http://localhost:1111
