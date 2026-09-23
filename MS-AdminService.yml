@@ -15,3 +15,7 @@ spring:
     admin:
       client:
         url: http://localhost:1111
+        
+logging:
+  level:
+    de.codecentric.boot.admin.client: DEBUG
