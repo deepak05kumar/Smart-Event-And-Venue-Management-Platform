@@ -73,6 +73,10 @@ internal:
       name: MS-AdminService
       key: ${ADMIN_SERVICE_KEY}
 
+    booking:
+      name: MS-BookingService
+      key: ${BOOKING_SERVICE_KEY}
+
 # logging:
 #   level:
 #     root: INFO
