@@ -40,3 +40,10 @@ resilience4j:
       venueService:
         timeout-duration: 3s
         cancel-running-future: true
+        
+internal:
+  services:
+    admin:
+      name: MS-AdminService
+      key: ${ADMIN_SERVICE_KEY}
+
