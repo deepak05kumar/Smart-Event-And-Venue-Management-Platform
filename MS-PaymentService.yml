@@ -23,9 +23,13 @@ spring:
 #   service:
 #     name: MS-PaymentService
 #     key: ${PAYMENT_SERVICE_KEY}
+
 internal:
   services:
     payment:
       name: MS-PaymentService
       key: ${PAYMENT_SERVICE_KEY}
 
+    admin:
+      name: MS-AdminService
+      key: ${ADMIN_SERVICE_KEY}
