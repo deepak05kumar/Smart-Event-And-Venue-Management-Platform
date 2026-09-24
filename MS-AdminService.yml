@@ -21,7 +21,12 @@ spring:
 #   level:
 #     de.codecentric.boot.admin.client: DEBUG
 
+# internal:
+#   service:
+#     name: MS-AdminService
+#     key: ${ADMIN_SERVICE_KEY}
 internal:
-  service:
-    name: MS-AdminService
-    key: ${ADMIN_SERVICE_KEY}
+  services:
+    admin:
+      name: MS-AdminService
+      key: ${ADMIN_SERVICE_KEY}
