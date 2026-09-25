@@ -47,3 +47,6 @@ internal:
       name: MS-AdminService
       key: ${ADMIN_SERVICE_KEY}
 
+    venue:
+      name: MS-EventService
+      key: ${EVENT_SERVICE_KEY}
