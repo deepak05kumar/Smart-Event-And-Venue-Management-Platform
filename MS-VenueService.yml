@@ -28,3 +28,7 @@ internal:
     admin:
       name: MS-AdminService
       key: ${ADMIN_SERVICE_KEY}
+
+    event:
+      name: MS-EventService
+      key: ${EVENT_SERVICE_KEY}
