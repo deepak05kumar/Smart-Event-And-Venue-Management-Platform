@@ -17,3 +17,9 @@ server:
 # jwt:
 #   secret: ${JWT_SECRET}
 #   expiration: ${JWT_EXPIRATION}
+
+internal:
+  services:
+    admin:
+      name: MS-AdminService
+      key: ${ADMIN_SERVICE_KEY}
