@@ -32,3 +32,7 @@ internal:
     event:
       name: MS-EventService
       key: ${EVENT_SERVICE_KEY}
+      
+    venue:
+      name: MS-VenueService
+      key: ${VENUE_SERVICE_KEY}
