@@ -20,11 +20,50 @@ spring:
         url: http://localhost:1111
 
 resilience4j:
+  circuitbreaker:
+    instances:
+
+      customerService:
+        sliding-window-type: COUNT_BASED
+        sliding-window-size: 10
+        minimum-number-of-calls: 5
+        failure-rate-threshold: 50
+        wait-duration-in-open-state: 10s
+        permitted-number-of-calls-in-half-open-state: 3
+        automatic-transition-from-open-to-half-open-enabled: true
+
+      eventService:
+        sliding-window-type: COUNT_BASED
+        sliding-window-size: 10
+        minimum-number-of-calls: 5
+        failure-rate-threshold: 50
+        wait-duration-in-open-state: 10s
+        permitted-number-of-calls-in-half-open-state: 3
+        automatic-transition-from-open-to-half-open-enabled: true
+
+      paymentService:
+        sliding-window-type: COUNT_BASED
+        sliding-window-size: 10
+        minimum-number-of-calls: 5
+        failure-rate-threshold: 50
+        wait-duration-in-open-state: 10s
+        permitted-number-of-calls-in-half-open-state: 3
+        automatic-transition-from-open-to-half-open-enabled: true
+
   timelimiter:
     instances:
+
+      customerService:
+        timeout-duration: 3s
+        cancel-running-future: true
+
+      eventService:
+        timeout-duration: 3s
+        cancel-running-future: true
+
       paymentService:
-        timeoutDuration: 5m
-        cancelRunningFuture: true
+        timeout-duration: 5m
+        cancel-running-future: true
 
 # internal:
 #   service:
