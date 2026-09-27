@@ -23,3 +23,7 @@ internal:
     admin:
       name: MS-AdminService
       key: ${ADMIN_SERVICE_KEY}
+
+    venue:
+      name: MS-VenueService
+      key: ${VENUE_SERVICE_KEY}
