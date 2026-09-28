@@ -37,9 +37,9 @@ spring:
     database-platform: org.hibernate.dialect.MySQLDialect
   
   boot:
-  admin:
-    client:
-      url: http://localhost:1111
+    admin:
+      client:
+        url: http://localhost:1111
 
 jwt:
   secret: ${JWT_SECRET}
