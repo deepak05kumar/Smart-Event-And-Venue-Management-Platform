@@ -1,10 +1,7 @@
 server:
   port: 3333
 
-spring:
-  application:
-    name: MS-ApiGateway
-
+spring:  
   cloud:
     gateway:
       mvc:
