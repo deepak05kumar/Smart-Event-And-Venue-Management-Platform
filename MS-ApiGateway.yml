@@ -1,0 +1,65 @@
+server:
+  port: 3333
+
+spring:
+  application:
+    name: MS-ApiGateway
+
+  cloud:
+    gateway:
+      mvc:
+        routes:
+
+          - id: auth-service
+            uri: lb://MS-AuthService
+            predicates:
+              - Path=/auth/**
+
+          - id: customer-service
+            uri: lb://MS-CustomerService
+            predicates:
+              - Path=/customers/**
+
+          - id: venue-service
+            uri: lb://MS-VenueService
+            predicates:
+              - Path=/venues/**
+
+          - id: event-service
+            uri: lb://MS-EventService
+            predicates:
+              - Path=/events/**
+
+          - id: booking-service
+            uri: lb://MS-BookingService
+            predicates:
+              - Path=/bookings/**
+
+          - id: payment-service
+            uri: lb://MS-PaymentService
+            predicates:
+              - Path=/payments/**
+
+          - id: notification-service
+            uri: lb://MS-NotificationService
+            predicates:
+              - Path=/notifications/**
+
+          - id: admin-service
+            uri: lb://MS-AdminService
+            predicates:
+              - Path=/admin/**
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  level:
+    root: INFO
