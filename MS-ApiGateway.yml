@@ -65,3 +65,4 @@ management:
 logging:
   level:
     root: INFO
+    de.codecentric.boot.admin.client: DEBUG
