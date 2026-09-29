@@ -52,16 +52,11 @@ spring:
             predicates:
               - Path=/admin/**
 
-# management:
-#   endpoints:
-#     web:
-#       exposure:
-#         include: health,info,metrics,prometheus
 management:
   endpoints:
     web:
       exposure:
-        include: "*"
+        include: health,info,metrics,prometheus
 
   endpoint:
     health:
@@ -70,4 +65,4 @@ management:
 logging:
   level:
     root: INFO
-    de.codecentric.boot.admin.client: DEBUG
+    # de.codecentric.boot.admin.client: DEBUG
