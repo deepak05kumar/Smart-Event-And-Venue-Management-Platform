@@ -2,7 +2,7 @@ server:
   port: 3333
 
 spring:  
-    boot:
+  boot:
     admin:
       client:
         url: http://localhost:1111
