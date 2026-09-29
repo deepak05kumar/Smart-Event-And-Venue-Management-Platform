@@ -1,56 +1,57 @@
 server:
   port: 3333
 
-spring:  
+spring:
   boot:
     admin:
       client:
         url: http://localhost:1111
-        
+
   cloud:
     gateway:
-      mvc:
-        routes:
+      server:
+        webmvc:
+          routes:
 
-          - id: auth-service
-            uri: lb://MS-AuthService
-            predicates:
-              - Path=/auth/**
+            - id: auth-service
+              uri: lb://MS-AuthService
+              predicates:
+                - Path=/auth/**
 
-          - id: customer-service
-            uri: lb://MS-CustomerService
-            predicates:
-              - Path=/customers/**
+            - id: customer-service
+              uri: lb://MS-CustomerService
+              predicates:
+                - Path=/customers/**
 
-          - id: venue-service
-            uri: lb://MS-VenueService
-            predicates:
-              - Path=/venues/**
+            - id: venue-service
+              uri: lb://MS-VenueService
+              predicates:
+                - Path=/venues/**
 
-          - id: event-service
-            uri: lb://MS-EventService
-            predicates:
-              - Path=/events/**
+            - id: event-service
+              uri: lb://MS-EventService
+              predicates:
+                - Path=/events/**
 
-          - id: booking-service
-            uri: lb://MS-BookingService
-            predicates:
-              - Path=/bookings/**
+            - id: booking-service
+              uri: lb://MS-BookingService
+              predicates:
+                - Path=/bookings/**
 
-          - id: payment-service
-            uri: lb://MS-PaymentService
-            predicates:
-              - Path=/payments/**
+            - id: payment-service
+              uri: lb://MS-PaymentService
+              predicates:
+                - Path=/payments/**
 
-          - id: notification-service
-            uri: lb://MS-NotificationService
-            predicates:
-              - Path=/notifications/**
+            - id: notification-service
+              uri: lb://MS-NotificationService
+              predicates:
+                - Path=/notifications/**
 
-          - id: admin-service
-            uri: lb://MS-AdminService
-            predicates:
-              - Path=/admin/**
+            - id: admin-service
+              uri: lb://MS-AdminService
+              predicates:
+                - Path=/admin/**
 
 management:
   endpoints:
@@ -65,4 +66,3 @@ management:
 logging:
   level:
     root: INFO
-    # de.codecentric.boot.admin.client: DEBUG
