@@ -76,6 +76,10 @@ internal:
     booking:
       name: MS-BookingService
       key: ${BOOKING_SERVICE_KEY}
+      
+    customer:
+      name: MS-CustomerService
+      key: ${CUSTOMER_SERVICE_KEY}
 
 # logging:
 #   level:
