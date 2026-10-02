@@ -18,10 +18,17 @@ spring:
               predicates:
                 - Path=/auth/**
 
+# Path=/customers/**       → MS-CustomerService
+# Path=/membership-plans/** → MS-CustomerService
             - id: customer-service
               uri: lb://MS-CustomerService
               predicates:
                 - Path=/customers/**
+            
+            - id: membership-plan-service
+              uri: lb://MS-CustomerService
+              predicates:
+                - Path=/membership-plans/**
 
             - id: venue-service
               uri: lb://MS-VenueService
