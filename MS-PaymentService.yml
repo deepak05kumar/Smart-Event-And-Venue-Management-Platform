@@ -29,7 +29,11 @@ internal:
     payment:
       name: MS-PaymentService
       key: ${PAYMENT_SERVICE_KEY}
-
+    
     admin:
       name: MS-AdminService
       key: ${ADMIN_SERVICE_KEY}
+    
+    customer:
+      name: MS-CustomerService
+      key: ${CUSTOMER_SERVICE_KEY}
