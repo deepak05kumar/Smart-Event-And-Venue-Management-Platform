@@ -23,20 +23,20 @@ spring:
       client:
         url: http://localhost:1111
   
-  mail:
-    host: ${spring.mail.host}
-    port: ${spring.mail.port}
-    username: ${spring.mail.username}
-    password: ${spring.mail.password}
-    properties:
-      mail:
-        smtp:
-          auth: true
-          starttls:
-            enable: true
+#   mail:
+#     host: ${spring.mail.host}
+#     port: ${spring.mail.port}
+#     username: ${spring.mail.username}
+#     password: ${spring.mail.password}
+#     properties:
+#       mail:
+#         smtp:
+#           auth: true
+#           starttls:
+#             enable: true
 
-app:
-  password-reset-url: ${app.password-reset-url}
+# app:
+#   password-reset-url: ${app.password-reset-url}
 
 internal:
   services:
