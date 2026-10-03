@@ -18,6 +18,12 @@ server:
 #   secret: ${JWT_SECRET}
 #   expiration: ${JWT_EXPIRATION}
 
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:1111
+
 internal:
   services:
     admin:
