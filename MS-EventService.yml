@@ -50,3 +50,7 @@ internal:
     event:
       name: MS-EventService
       key: ${EVENT_SERVICE_KEY}
+      
+    booking:
+      name: MS-BookingService
+      key: ${BOOKING_SERVICE_KEY}
